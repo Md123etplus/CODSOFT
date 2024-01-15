@@ -443,7 +443,28 @@ body {
   display: flex;
   flex-direction: column;
 }
-
+.resume-redirect{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.youtube{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top:10%; 
+}
+.youtube img{
+  width:40%;
+  border-radius:5%;
+  cursor:pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.youtube img:hover{
+  transform:scale(1.1);
+}
 .cv{
   display:flex;
   flex-direction: row;
@@ -458,7 +479,7 @@ body {
   align-items: center;
   margin-top:10%;
   margin-left:2%;
-  margin-bottom:300px;
+  
 }
 .text{
   width:15%;
@@ -470,9 +491,11 @@ body {
   justify-content: center;
   align-items: center;
   transition: transform 0.2s ease-in-out;
+  margin-bottom:300px;
 }
+
 .text:hover{
-  transform:scale(1.1)
+  transform:scale(1.1);
 }
 .text div{
   margin-top:10%;
