@@ -1,0 +1,233 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url(bg-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x:hidden;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    position: sticky;
+    top:0;
+    column-gap: 25%;
+    margin-top: 2%;
+    margin-left:5%;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.head-el {
+    cursor: pointer;
+    white-space: nowrap;
+    position: relative;
+}
+
+.head-el::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top:100%;
+    width: 100%;
+    height: 3px;
+    background-color:rgb(255, 145, 0);
+    transform-origin:center;
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+.head-el:hover::after {
+    transform: scaleX(1);
+    
+}
+
+.head-el a{
+    text-decoration: none;
+    color:rgb(241, 228, 228);
+    transition: color 0.2s;
+}
+.head-el:hover a{
+    color:rgb(255, 145, 0);
+}
+
+.right-section{
+    display:flex;
+    flex-direction: row;
+    column-gap: 20%;
+}
+.left-section{
+    width:20%;
+}
+.left-section img{
+    border-radius:5px;
+    width:60%;
+}
+.home_page{
+    display:flex;
+    flex-direction: row;
+    background-image: url(bg-img.jpg);
+    margin-left:8%;
+    margin-top:10%;
+    margin-bottom:200px;
+    margin-right:5%;
+    align-items: center;
+    justify-content: center;
+}
+.home_page p{
+    color:white;
+    font-weight: bold;
+    font-size:20px;
+    line-height: 30px;
+}
+.body-img{
+    width:50%;
+}
+.body-img img{
+    width:100%;
+}
+.welcome-text{
+    color:rgb(255, 145, 0);
+    font-weight: bold;
+    font-size:50px;
+}
+.services{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.service-pretext{
+    display:flex;
+    justify-content: center;
+    color:rgb(192, 180, 166);
+    font-weight: bold;
+    font-size:50px;
+    text-decoration: underline;
+    margin-bottom:8%;
+    padding-top:5%;
+}
+.service{
+    display:flex;
+    flex-direction: row;
+    column-gap: 5%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+}
+.service span{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(255, 145, 0);
+    font-weight: bold;
+    font-size:50px;
+    white-space: nowrap;
+}
+.service img{
+    border-radius: 15px;
+}
+.contact{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about{
+    color:white;
+    font-size:25px;
+    line-height: 50px;
+    margin-left:5%;
+    margin-bottom:200px;
+}
+.about-pretext{
+    display:flex;
+    justify-content: center;
+    color:rgb(192, 180, 166);
+    font-weight: bold;
+    font-size:50px;
+    margin-bottom:8%;
+    padding-top:10%;
+}
+.contact-form {
+    max-width: 400px;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+.form-group {
+    margin-bottom: 20px;
+  }
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 15px;
+    padding-right:25px;
+    padding-left:25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+.button{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+button:hover {
+    background-color: #45a049;
+  }
+
+.footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top:11%;
+  }
+.footer p{
+    font-size:20px;
+    color:rgb(222, 216, 216);
+    
+  }
+@media only screen and (max-width:1000px){
+    .right-section{
+        display:none;
+        flex-direction:column;
+    }
+    .home_page{
+        flex-direction: column;
+        
+    }
+    .service{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width:570px){
+    .service span{
+        font-size:25px;
+    }
+}
