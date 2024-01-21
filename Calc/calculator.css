@@ -1,0 +1,54 @@
+body{
+    display:flex;
+    justify-content: center;
+    background-color: black;
+}
+.lecorps{
+    margin-top:5%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    margin-top:5%;
+    font-weight:bold;
+    font-size:30px;
+    align-items: top;
+    color:white;
+}
+
+.calculatrice{
+    display:grid;
+    flex-direction: column;
+    justify-content: center;
+    margin-top:10%;
+}
+.buttons{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.screen{
+    display: flex;
+    width:100%;
+    margin-bottom:2%;
+}
+.screen input{
+    width:100%;
+    height:60px;
+    text-align: right;
+    font-weight: bold;
+    font-size:30px;
+}
+.column{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+}
+.column button{
+    width: 100%;
+    height:50px;
+    font-weight: bold;
+    font-size:20px;
+}

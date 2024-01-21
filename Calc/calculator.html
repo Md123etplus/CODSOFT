@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="calculator.css">
+    </head>
+    <body>
+        <section class="lecorps">
+            <span class="text">CALCULATOR</span>
+            <section class="calculatrice">
+                <section class="screen">
+                    <input id='screen' type="text" placeholder="0">
+                </section>
+                <section class="buttons">
+                    <div class="column">
+                        <span><button  onclick="ecrire_sign('%')">%</button></span>
+                        <span><button onclick="inverser()">1/x</button></span>
+                        <span><button  onclick="ecrire('7')">7</button></span>
+                        <span><button  onclick="ecrire('4')">4</button></span>
+                        <span><button  onclick="ecrire('1')">1</button></span>
+                        <span><button onclick="change_sign()">+/-</button></span>
+                    </div>
+                    <div class="column">
+                        <span><button id="clearButton">CE</button></span>
+                        <span><button onclick="square()">x&#178;</button></span>
+                        <span><button  onclick="ecrire('8')">8</button></span>
+                        <span><button  onclick="ecrire('5')">5</button></span>
+                        <span><button  onclick="ecrire('2')">2</button></span>
+                        <span><button  onclick="ecrire('0')">0</button></span>
+                    </div>
+                    <div class="column">
+                        <span><button id="clearButtonC">C</button></span>
+                        <span><button onclick="racine()">&#8730;x</button></span>
+                        <span><button  onclick="ecrire('9')">9</button></span>
+                        <span><button  onclick="ecrire('6')">6</button></span>
+                        <span><button  onclick="ecrire('3')">3</button></span>
+                        <span><button  onclick="ecrire_sign('.')">.</button></span>
+                    </div>
+                    <div class="column">
+                        <span><button onclick="back()">&#9664;</button></span>
+                        <span><button  onclick="ecrire_sign('/')">/</button></span>
+                        <span><button  onclick="ecrire_sign('*')">*</button></span>
+                        <span><button  onclick="ecrire_sign('-')">-</button></span>
+                        <span><button  onclick="ecrire_sign('+')">+</button></span>
+                        <span><button onclick="calcul()">=</button></span>
+                    </div>
+                </section>
+            </section>
+        </section>
+        
+        <script src="calculator.js"></script>
+    </body>
+</html>
