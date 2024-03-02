@@ -51,7 +51,6 @@ body {
   display:flex;
   flex-direction: row;
   justify-content: center;
-  margin-left:3%;
   padding: 5px 10px;
   align-items: center;
   top:0;
@@ -375,6 +374,13 @@ body {
   margin-left:5%;
   margin-right:5%;
   margin-bottom:200px;
+  align-items: center;
+
+}
+.project-img{
+  object-fit:contain;
+  width:60%;
+  height:80%;
 }
 .project-title{
   color:white;
@@ -384,15 +390,15 @@ body {
 }
 .project1{
   display:flex;
-  flex-direction: column;
+  flex-direction:column;
   width:70%;
   align-items: center;
   transition: transform 0.3s ease-in-out;
 }
 
 .project1 img{
-  width:90%;
-  height:90%;
+  width:100%;
+  height:100%;
   margin-bottom:2%;
 }
 .project1:hover{
@@ -406,8 +412,8 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 .project2 img{
-  width:90%;
-  height:70%;
+  width:100%;
+  height:100%;
   margin-bottom: 3%;
 }
 .project2:hover{
@@ -432,10 +438,7 @@ body {
   color:white;
   line-height: 30px;
 }
-.project1,.project2,.project3{
-  border: 3px solid;
-  box-shadow : 1px 1px 3px 3px rgba(22, 21, 21, 0.952);
-}
+
 .resume{
   margin-bottom:200px;
 }
