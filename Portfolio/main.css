@@ -182,6 +182,7 @@ body {
     border-radius: 125px;
     cursor:normal;
     -webkit-user-drag:none;
+    filter:contrast(110%);
 }
 .mypicture-div{
     margin-top:5%;
